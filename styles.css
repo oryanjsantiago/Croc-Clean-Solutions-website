@@ -169,29 +169,89 @@ body {
   margin-bottom: 12px;
 }
 
-/* Contact */
+/* Quote Form */
 .contact {
   background: #29a329;
   padding: 80px 0;
 }
 
-.form {
-  background: white;
-  max-width: 500px;
-  margin: auto;
-  padding: 32px;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.contact-subtitle {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
 }
 
-.form input,
-.form textarea {
+.quote-form {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  color: #1c5f1c;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
   width: 100%;
   padding: 14px;
-  margin-bottom: 16px;
-  border-radius: 12px;
-  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  border: 1px solid #1c5f1c;
+  background: #ffffff;
+  color: #1c5f1c;
+  font-size: 0.95rem;
+}
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder {
+  color: #1c5f1c;
+}
+
+.full-width {
+  margin-top: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.checkbox input {
+  margin-top: 3px;
+}
+
+.checkbox label {
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.quote-form button {
+  background: #29a329;
+  color: #ffffff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 16px;
   font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Footer */
